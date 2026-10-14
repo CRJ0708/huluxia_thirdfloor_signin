@@ -1,7 +1,8 @@
 name: huluxia_signin
+# cron: 北京时间 00:01 = UTC 16:01
 on:
   schedule:
-    - cron: '1 16 * * *'  # 北京时间 00:01
+    - cron: '1 16 * * *'
   workflow_dispatch:
 jobs:
   build:
