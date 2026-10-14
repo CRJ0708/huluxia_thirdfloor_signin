@@ -1,7 +1,9 @@
 name: huluxia_signin
 on:
+  push:
+    branches: [master]
   schedule:
-    - cron: '0 16 * * *'  # 北京时间 00:00
+    - cron: '0 16 * * *'
   workflow_dispatch:
 jobs:
   build:
